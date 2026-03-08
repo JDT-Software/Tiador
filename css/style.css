@@ -1,5 +1,4 @@
-/* Red Hat Display Font */
-@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@800&display=swap');
+/* Red Hat Display Font — loaded via <link> in HTML for non-blocking render */
 
 /* Reset & Base Styles */
 * {
@@ -111,7 +110,6 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../images/water_header.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: var(--white);
     padding: 50px 20px 80px;
     text-align: left;
@@ -188,6 +186,8 @@ body {
 .services {
     padding: 80px 20px;
     background: #d6d6d6;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 800px;
 }
 
 .services-grid-asymmetric {
@@ -413,6 +413,8 @@ body {
 .about {
     padding: 80px 20px;
     background: #d6d6d6;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 600px;
 }
 
 .about-content {
@@ -517,6 +519,8 @@ body {
 .gallery {
     padding: 80px 20px;
     background: #d6d6d6;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 600px;
 }
 
 .gallery-grid {
@@ -600,6 +604,8 @@ body {
 .contact {
     padding: 80px 20px;
     background: #d6d6d6;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 400px;
 }
 
 .contact-content {
@@ -684,6 +690,7 @@ body {
 .fade-right {
     opacity: 0;
     transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: transform, opacity;
 }
 
 .fade-left {
@@ -698,6 +705,7 @@ body {
 .fade-right.show {
     opacity: 1;
     transform: translateX(0);
+    will-change: auto;
 }
 
 /* Responsive Design */

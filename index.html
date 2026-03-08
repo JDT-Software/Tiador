@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional drilling services">
     <title>Drilling Services | Company Name</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=red-hat-display@800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=red-hat-display@800&display=swap"></noscript>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -141,7 +146,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/hydraulic.jpg" alt="Drilling equipment">
+                    <img src="images/hydraulic.jpg" alt="Drilling equipment" loading="lazy">
                 </div>
             </div>
         </div>
@@ -153,23 +158,23 @@
             <h2 class="section-title">Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/hydraulic.jpg" alt="Gallery Image 1">
+                    <img src="images/Gallery1.jpeg" alt="Gallery Image 1" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/hydraulic.jpg" alt="Gallery Image 2">
+                    <img src="images/Gallery2.jpeg" alt="Gallery Image 2" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/hydraulic.jpg" alt="Gallery Image 3">
+                    <img src="images/Gallery3.jpeg" alt="Gallery Image 3" loading="lazy">
                 </div>
-                 <div class="gallery-item">
-                    <img src="images/hydraulic.jpg" alt="Gallery Image 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/hydraulic.jpg" alt="Gallery Image 2">
+                 <!-- <div class="gallery-item">
+                    <img src="images/recovery.jpg" alt="Gallery Image 1" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/hydraulic.jpg" alt="Gallery Image 3">
+                    <img src="images/hydraulic.jpg" alt="Gallery Image 2" loading="lazy">
                 </div>
+                <div class="gallery-item">
+                    <img src="images/hydraulic.jpg" alt="Gallery Image 3" loading="lazy">
+                </div> -->
             </div>
         </div>
     </section>
@@ -182,17 +187,35 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>Phone</h3>
-                        <p>+27 XX XXX XXXX</p>
+                        <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                            <div>
+                                <p>Kobus du Toit</p>
+                                <p>0824335183</p>
+                                <a href="https://wa.me/27824335183" class="btn btn-primary" style="display: inline-block; margin: 10px 0; padding: 10px 20px; text-decoration: none;">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Kobus
+                                </a>
+                            </div>
+                            <div>
+                                <p>Michael du Toit</p>
+                                <p>0725417230</p>
+                                <a href="https://wa.me/27725417230" class="btn btn-primary" style="display: inline-block; margin: 10px 0; padding: 10px 20px; text-decoration: none;">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Michael
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <h3>Email</h3>
-                        <p>info@drillingcompany.co.za</p>
+                        <p>tiador126@gmail.com</p>
+                        <a href="mailto:tiador126@gmail.com" class="btn btn-primary" style="display: inline-block; margin: 10px 0; padding: 10px 20px; text-decoration: none;">
+                            <i class="fas fa-envelope"></i> Send Email
+                        </a>
                     </div>
                     <div class="contact-item">
                         <h3>Location</h3>
-                        <p>City, Province, South Africa</p>
+                        <p>Mokopane, Limpopo, South Africa</p>
                     </div>
-                </div>
+                <!-- </div>
                 <form class="contact-form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
@@ -200,18 +223,14 @@
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Drilling Company Name. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-            </div>
+            <p>&copy; 2025 Tiador. All rights reserved.</p>
         </div>
     </footer>
 
