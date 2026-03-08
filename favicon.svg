@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="5" fill="#44130e"/>
+  <!-- T horizontal bar -->
+  <rect x="5" y="7" width="22" height="6" rx="1.5" fill="#f49222"/>
+  <!-- T vertical bar -->
+  <rect x="13" y="7" width="6" height="19" rx="1.5" fill="#f49222"/>
+  <!-- Accent line at bottom -->
+  <rect x="5" y="28" width="22" height="2" rx="1" fill="#f84a12"/>
+</svg>
